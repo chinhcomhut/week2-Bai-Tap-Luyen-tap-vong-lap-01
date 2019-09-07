@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+<h2>Tìm số đầu tiên chia hết cho 5 trong dãy fibonaci</h2>
+<script>
+    let a1=0,a2=1;
+    let a;
+    let n=parseInt(prompt("nhập n là số các chữ số trong dãy fibonaci để tìm ra các số chia hết cho 5"));
+     if (n>3){
+        for(i=3;i<n;i++){
+            a=a1+a2;
+            a1=a2;
+            a2=a;
+            if (a%5==0)
+                document.write(",  "+a);
+        }
+    }
+else if((n==1)||(n==2)||(n==3)) {document.write("Số chia hết cho 5 là: 0")}
+</script>
+</body>
+</html>

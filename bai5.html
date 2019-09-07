@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính tổng 20 số đầu tiên trong dãy fibonaci</title>
+</head>
+<body>
+<h2>Tính tổng 20 số đầu tiên trong dãy FIBONACI sử dụng vòng lặp for</h2>
+<script>
+    let a1=0; a2=1;
+    let an;
+    let tong;
+    for (i=0;i<19;i++){
+        an=a1+a2;
+        a1=a2;
+        a2=an;
+        sum=a1+a2;
+        tong=sum+1;
+    }
+document.write("Tổng của 20 số đầu tiên trong dãy Fibonaci là: " +tong)
+</script>
+</body>
+</html>
